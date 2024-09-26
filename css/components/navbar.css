@@ -38,6 +38,7 @@
   .navbar {
     position: fixed;
     bottom: 0;
+    z-index: 1000;
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
