@@ -87,9 +87,3 @@ To deploy the website yourself using Vercel, follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-### Highlights:
-- **Performance and SEO**: Achieved a >97 score on Google PageSpeed Insights for both mobile and desktop.
-- **Development from Scratch**: Built without the use of CSS frameworks, pre-built templates, or Generative AI.
-- **Key Design Choices**: Explained the reasons behind the decisions, such as responsive layout, typography, and accessibility considerations.
-
