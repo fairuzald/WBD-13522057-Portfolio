@@ -2,7 +2,7 @@
 
 This is a personal website built using **HTML** and **CSS** from scratch, showcasing my projects, skills, and experiences. The website was developed for the **Web Application Development** course ([IF3110](https://www.cs.ui.ac.id/teaching/if3110-web-programming/)) at **Institut Teknologi Bandung**.
 
-The site follows modern web development best practices, including **semantic HTML**, **responsive design**, and **SEO optimization**. It has achieved a **>95 score on both desktop and mobile** according to **Google PageSpeed Insights**. Additionally, the site is optimized for SEO and web performance.
+The site follows modern web development best practices, including **semantic HTML**, **responsive design**, and **SEO optimization**. It has achieved a **>97 score on both desktop and mobile** according to **Google PageSpeed Insights**. Additionally, the site is optimized for SEO and web performance.
 
 ## Table of Contents
 
@@ -38,8 +38,8 @@ The portfolio is deployed and accessible at:
 
 The website has been optimized to achieve the following results on **Google PageSpeed Insights**:
 
-- **Desktop**: >95
-- **Mobile**: >95
+- **Desktop**: >97
+- **Mobile**: >97
 
 Additionally, SEO optimizations were implemented to improve visibility and performance, ensuring fast load times and enhanced user experience.
 
@@ -80,7 +80,7 @@ To deploy the website yourself using Vercel, follow these steps:
 
 ## Highlights
 
-- **Performance and SEO:** Achieved a >95 score on Google PageSpeed Insights for both mobile and desktop.
+- **Performance and SEO:** Achieved a >97 score on Google PageSpeed Insights for both mobile and desktop.
 - **Development from Scratch:** Built without the use of CSS frameworks, pre-built templates, or Generative AI.
 - **Key Design Choices:** Explained the reasons behind the decisions, such as responsive layout, typography, and accessibility considerations.
 
@@ -88,11 +88,8 @@ To deploy the website yourself using Vercel, follow these steps:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-
-
-
 ### Highlights:
-- **Performance and SEO**: Achieved a >95 score on Google PageSpeed Insights for both mobile and desktop.
+- **Performance and SEO**: Achieved a >97 score on Google PageSpeed Insights for both mobile and desktop.
 - **Development from Scratch**: Built without the use of CSS frameworks, pre-built templates, or Generative AI.
 - **Key Design Choices**: Explained the reasons behind the decisions, such as responsive layout, typography, and accessibility considerations.
 
