@@ -1,3 +1,47 @@
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateZoomIn {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateZ(-160deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) rotateZ(0deg) scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
 .grid-projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -25,11 +69,15 @@
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
+  animation: fadeInScale 0.6s ease-out backwards;
+  animation-delay: calc(0.1s * var(--i, 0));
 }
 
 .project-image-container {
   position: relative;
   aspect-ratio: 16 / 9;
+  animation: rotateZoomIn 0.2s ease-out backwards;
+  animation-delay: calc(0.1s * var(--i, 0) + 0.2s);
 }
 
 .project-image {
@@ -47,7 +95,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -66,6 +114,8 @@
   padding: 0.5rem;
   border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: rotateIn 0.4s ease-out backwards;
+  animation-delay: calc(0.1s * var(--i, 0) + 0.6s);
 }
 
 .project-links i:hover {
@@ -115,6 +165,8 @@
 
 .project-info {
   padding: 1rem 1.5rem;
+  animation: slideInFromBottom 0.5s ease-out backwards;
+  animation-delay: calc(0.1s * var(--i, 0) + 0.4s);
 }
 
 .project-title {
@@ -129,6 +181,7 @@
   color: #a0a0a0;
   transition: color 0.3s ease;
 }
+
 
 /* Hover effect for title and description */
 .project-item:hover .project-title {
