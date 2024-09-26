@@ -1,105 +1,101 @@
 /* Sidebar styles */
 .sidebar {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 1.5rem;
-    border: 2px solid #858585;
-    padding: 3.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1.5rem;
+  border: 2px solid #858585;
+  padding: 3.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 0.75rem;
-    object-fit: cover;
-    margin:"auto";
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  margin: "auto";
 }
 
 .name {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
 }
 
-
 .bio-data {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .bio-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.bio-title{
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
+.bio-title {
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .bio-icon {
-    width: 3rem;
-    height: 3rem;
-    background: linear-gradient(90deg, #FF00FF, #00FFFF);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bio-content{
-    color: #d1d4ec;
-    font-size:14px
-
+.bio-content {
+  color: #d1d4ec;
+  font-size: 14px;
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
 }
 
 .social-icon {
-    font-size: 1.5rem;
-    color: #fff;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-
-@media (min-width: 600px){
-    @media (max-width: 1279px) {
-        .bio-data {
-            grid-template-columns: 1fr 1fr;
-            gap:2rem
-        }
+@media (min-width: 600px) {
+  @media (max-width: 1279px) {
+    .bio-data {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
+  }
 }
 
-@media (min-width:900px){
-    @media (max-width: 1279px) {
-    .bio-data{
-        grid-template-columns: 1fr 1fr 1fr;
+@media (min-width: 900px) {
+  @media (max-width: 1279px) {
+    .bio-data {
+      grid-template-columns: 1fr 1fr 1fr;
     }
-    }
+  }
 }
 
 /* Responsive layout */
 @media (min-width: 1280px) {
-    .sidebar {
-        width: 320px;
-        flex-shrink: 0;
-    }
+  .sidebar {
+    width: 320px;
+    flex-shrink: 0;
+  }
 }
 
-
 @media (max-width: 1279px) {
-    .sidebar {
-        margin-bottom: 2.5rem;
-    }
+  .sidebar {
+    margin-bottom: 2.5rem;
+  }
 }
