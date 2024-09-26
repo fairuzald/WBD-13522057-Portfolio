@@ -1,5 +1,7 @@
 /* Navbar styles */
 .navbar {
+  width: fit-content;
+  margin-left: auto;
   padding: 1rem;
   background-color: #0b1438;
   border-bottom-left-radius: 1.5rem;

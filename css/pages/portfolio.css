@@ -1,0 +1,149 @@
+.grid-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image-container {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-links {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-links i {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-links i:hover {
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform: scale(1.2); /* Scale icon on hover */
+}
+
+.project-item:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(22, 59, 71, 0.5)
+  ); /* Semi-transparent gradient on hover */
+}
+
+/* Hover effect on icons */
+.project-item:hover .project-links i {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Change to white background on hover */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.05); /* Scale image on hover */
+}
+
+.project-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project-info {
+  padding: 1rem 1.5rem;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for title and description */
+.project-item:hover .project-title {
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-item:hover .project-description {
+  color: white;
+}
+
+.overlay-content p {
+  padding: 6px 10px;
+  background-color: rgb(0, 175, 175);
+  border-radius: 10px;
+}
