@@ -26,11 +26,12 @@ The portfolio is deployed and accessible at:
 - **About Me** section including a brief introduction, skills, and experiences.
 - **Contact form** for visitors to reach out.
 - Clean and simple navigation, no JavaScript required.
+- **Animation on first render** to enhance user experience and visual appeal.
 
 ## Technologies Used
 
 - **HTML**: For structuring content using semantic elements.
-- **CSS**: For designing and styling the layout, typography, and responsiveness.
+- **CSS**: For designing and styling the layout, typography, responsiveness, and animations.
 
 > Note: This project was built without using any CSS frameworks, pre-built templates, or Generative AI tools.
 
@@ -53,18 +54,18 @@ This project was developed under the following constraints and challenges:
 
 3. **Creativity in Colors and Typography**: Custom fonts and a color palette were chosen to reflect personal style, ensuring both aesthetics and readability.
 
+4. **First Render Animation**: An engaging animation is implemented on the first render to create a memorable user experience without compromising load times.
+
 ### Bonus Criteria
 
-- **Interactive Design (without JavaScript)**: The site uses only HTML and CSS for any interactions, such as hover effects and transitions, without relying on JavaScript.
+- **Interactive Design (without JavaScript)**: The site uses only HTML and CSS for any interactions, such as hover effects, transitions, and the first render animation, without relying on JavaScript.
 - **Accessibility**: Accessibility features were considered to make the site navigable by screen readers and keyboard users.
-
-- **Performance Optimization**: Images, CSS, and HTML were all optimized for fast loading and minimal rendering times.
+- **Performance Optimization**: Images, CSS, and HTML were all optimized for fast loading and minimal rendering times, including the careful implementation of the first render animation.
 
 ### Design Decisions
 
 - **Responsive Layout**: The choice to use CSS Flexbox and media queries ensures the site layout remains fluid and adaptable across various devices.
 - **Typography & Colors**: A balance between modern fonts and a clean, minimalist color scheme was used to keep the design professional and readable.
-
 - **No Frameworks**: To adhere to the course requirements and push creativity, no frameworks (e.g., Bootstrap) or templating engines were used, ensuring everything was coded from scratch.
 
 ## Deployment
@@ -76,13 +77,14 @@ To deploy the website yourself using Vercel, follow these steps:
 1. Sign up for a Vercel account.
 2. Link your GitHub repository containing the website's code.
 3. Vercel will automatically detect your project as a static site and deploy it.
-4. Once deployed, you’ll receive a custom URL (e.g., `https://your-site-name.vercel.app`) or link your custom domain as I did for my portfolio.
+4. Once deployed, you'll receive a custom URL (e.g., `https://your-site-name.vercel.app`) or link your custom domain as I did for my portfolio.
 
 ## Highlights
 
 - **Performance and SEO:** Achieved a >97 score on Google PageSpeed Insights for both mobile and desktop.
 - **Development from Scratch:** Built without the use of CSS frameworks, pre-built templates, or Generative AI.
 - **Key Design Choices:** Explained the reasons behind the decisions, such as responsive layout, typography, and accessibility considerations.
+- **First Render Animation:** Implemented an engaging animation on first render to create a memorable user experience while maintaining performance.
 
 ## License
 
