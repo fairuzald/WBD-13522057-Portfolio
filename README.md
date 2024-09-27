@@ -1,8 +1,8 @@
 # Personal Website Portfolio
 
-This is a personal website built using **HTML** and **CSS** from scratch, showcasing my projects, skills, and experiences. The website was developed for the **Web Application Development** course ([IF3110](https://www.cs.ui.ac.id/teaching/if3110-web-programming/)) at **Institut Teknologi Bandung**.
+This is a personal website built using **HTML** and **CSS** from scratch, showcasing my projects, skills, and experiences. The website was developed for the **Web Application Development** course IF3110 at **Institut Teknologi Bandung**.
 
-The site follows modern web development best practices, including **semantic HTML**, **responsive design**, and **SEO optimization**. It has achieved a **>97 score on both desktop and mobile** according to **Google PageSpeed Insights**. Additionally, the site is optimized for SEO and web performance.
+The site follows modern web development best practices, including **semantic HTML**, **responsive design**, and **SEO optimization**. It has achieved a **100 score on both desktop and mobile** according to **Google PageSpeed Insights**. Additionally, the site is optimized for SEO and web performance.
 
 ## Table of Contents
 
@@ -39,10 +39,43 @@ The portfolio is deployed and accessible at:
 
 The website has been optimized to achieve the following results on **Google PageSpeed Insights**:
 
-- **Desktop**: >97
-- **Mobile**: >97
+- **Desktop**: 100
+- **Mobile**: 100
 
-Additionally, SEO optimizations were implemented to improve visibility and performance, ensuring fast load times and enhanced user experience.
+Here are the proof of the results:
+
+### Main Page Performance
+
+- **Desktop**
+  ![Main Page Desktop](./screenshots/main-desk.png)
+
+- **Mobile**
+  ![Main Page Mobile](./screenshots/main-mob.png)
+
+### Portfolio Page Performance
+
+- **Desktop**
+  ![Portfolio Page Desktop](./screenshots/porto-desk.png)
+
+- **Mobile**
+  ![Portfolio Page Mobile](./screenshots/port-mob.png)
+
+### Portfolio Detail Page Performance
+
+- **Desktop**
+  ![Portfolio Detail Page Desktop](./screenshots/porto-detail-desk.png)
+
+- **Mobile**
+  ![Portfolio Detail Page Mobile](./screenshots/porto-detail-mob.png)
+
+### Resume Page Performance
+
+- **Desktop**
+  ![Resume Page Desktop](./screenshots/resume-desk.png)
+
+- **Mobile**
+  ![Resume Page Mobile](./screenshots/resume-mob.png)
+
 
 ## Key Criteria
 
@@ -72,16 +105,10 @@ This project was developed under the following constraints and challenges:
 
 The website is deployed using [Vercel](https://vercel.com). You can visit the live version here: [https://portfolio.fairuzald.site/](https://portfolio.fairuzald.site/).
 
-To deploy the website yourself using Vercel, follow these steps:
-
-1. Sign up for a Vercel account.
-2. Link your GitHub repository containing the website's code.
-3. Vercel will automatically detect your project as a static site and deploy it.
-4. Once deployed, you'll receive a custom URL (e.g., `https://your-site-name.vercel.app`) or link your custom domain as I did for my portfolio.
 
 ## Highlights
 
-- **Performance and SEO:** Achieved a >97 score on Google PageSpeed Insights for both mobile and desktop.
+- **Performance and SEO:** Achieved a 100 score on Google PageSpeed Insights for both mobile and desktop.
 - **Development from Scratch:** Built without the use of CSS frameworks, pre-built templates, or Generative AI.
 - **Key Design Choices:** Explained the reasons behind the decisions, such as responsive layout, typography, and accessibility considerations.
 - **First Render Animation:** Implemented an engaging animation on first render to create a memorable user experience while maintaining performance.
