@@ -1,4 +1,3 @@
-/* Button styles with first render animations */
 @keyframes fadeInScale {
   0% {
     opacity: 0;
@@ -21,16 +20,56 @@
   }
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Button styles with animations */
 .button-gradient-outline {
-  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  position: relative;
+  background-color: #000; /* Black background */
   color: #fff;
-  width: 100%;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   font-weight: 600;
   text-align: center;
   display: inline-block;
   animation: fadeInScale 0.7s ease-out;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-full{
+  width: 90%;
+}
+
+.button-gradient-outline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  background-size: 200% 200%;
+  border-radius: 9999px;
+  z-index: -1;
+  animation: gradientShift 3s ease-in-out infinite;
+  padding: 2px; /* Space for the border */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 
 .button-gradient-outline:hover {
@@ -38,83 +77,3 @@
   transform: scale(1.05);
   transition: all 0.5s;
 }
-
-/* Button styles */
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  height: 2.5rem;
-  padding: 0 1rem;
-  animation: slideInFromBottom 0.5s ease-out;
-}
-
-.button-default {
-  background-color: #1e293b;
-  color: #f8fafc;
-}
-
-.button-default:hover {
-  background-color: rgba(30, 41, 59, 0.9);
-}
-
-.button-gradient {
-  background: linear-gradient(90deg, #ff00ff, #00ffff);
-  color: #fff;
-}
-
-.button-destructive {
-  background-color: #ef4444;
-  color: #fff;
-}
-
-.button-outline {
-  border: 1px solid #e2e8f0;
-  background-color: #fff;
-  color: #1e293b;
-}
-
-.button-secondary {
-  background-color: #f1f5f9;
-  color: #1e293b;
-}
-
-.button-ghost {
-  background-color: transparent;
-  color: #1e293b;
-}
-
-.button-link {
-  background-color: transparent;
-  color: #1e293b;
-  text-decoration: underline;
-}
-
-.button-xs {
-  height: 1.75rem;
-  padding: 0 0.5rem;
-}
-.button-sm {
-  height: 2.25rem;
-  padding: 0 0.75rem;
-}
-.button-lg {
-  height: 2.75rem;
-  padding: 0 2rem;
-}
-.button-icon {
-  height: 2.5rem;
-  width: 2.5rem;
-  padding: 0;
-}
-
-/* Apply different animation delays to create a staggered effect */
-.button:nth-child(1) { animation-delay: 0.1s; }
-.button:nth-child(2) { animation-delay: 0.2s; }
-.button:nth-child(3) { animation-delay: 0.3s; }
-.button:nth-child(4) { animation-delay: 0.4s; }
-.button:nth-child(5) { animation-delay: 0.5s; }
