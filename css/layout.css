@@ -51,6 +51,7 @@ main {
 
 .content-area {
   flex: 1;
+  overflow-x: hidden;
   justify-content: center;
   padding-right: 1rem;
   margin-top: -10px;
